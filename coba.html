@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Panto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="font-sans overflow-x-hidden">
+    <section
+      class="relative min-h-screen bg-[url('./images/1441.png')] bg-cover bg-center">
+      <div class="absolute inset-0"></div>
+
+      <nav
+        class="relative z-20 max-w-7xl mx-auto px-4 py-6 flex items-center justify-between text-white"
+      >
+        <h1 class="text-2xl font-bold">Panto</h1>
+
+        <ul class="hidden md:flex gap-8 text-sm">
+          <li><a href="#" class="hover:text-orange-400">Furniture</a></li>
+          <li><a href="#" class="hover:text-orange-400">Shop</a></li>
+          <li><a href="#" class="hover:text-orange-400">About Us</a></li>
+          <li><a href="#" class="hover:text-orange-400">Contact</a></li>
+        </ul>
+
+        <div class="flex items-center gap-4">
+          <input type="checkbox" id="menu" class="peer hidden" />
+          <label for="menu" class="md:hidden text-2xl cursor-pointer">☰</label>
+
+          <div class="relative">
+            <div class="w-8 h-8 flex items-center justify-center">
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.007 2.83331C20.8036 2.83331 23.9249 5.81668 24.0833 9.59694H24.0463C24.0508 9.70682 24.0296 9.81624 23.9846 9.91665H24.2058C25.9299 9.91665 27.7353 11.1116 28.4592 13.9964L28.5378 14.3367L29.6271 23.1125C30.411 28.7098 27.3487 31.0636 23.1713 31.1633L22.8912 31.1666H11.1471C6.90168 31.1666 3.63027 29.6196 4.34956 23.4933L4.39861 23.1125L5.50041 14.3367C6.0437 11.2302 7.86761 10.0048 9.625 9.92127L9.81993 9.91665H9.93067C9.912 9.81089 9.912 9.7027 9.93067 9.59694C10.0891 5.81668 13.2104 2.83331 17.007 2.83331ZM12.8874 14.6331C12.1959 14.6331 11.6354 15.2101 11.6354 15.9218C11.6354 16.6335 12.1959 17.2105 12.8874 17.2105C13.5789 17.2105 14.1394 16.6335 14.1394 15.9218L14.1297 15.7602C14.0524 15.1247 13.5257 14.6331 12.8874 14.6331ZM21.0882 14.6331C20.3968 14.6331 19.8362 15.2101 19.8362 15.9218C19.8362 16.6335 20.3968 17.2105 21.0882 17.2105C21.7797 17.2105 22.3403 16.6335 22.3403 15.9218C22.3403 15.2101 21.7797 14.6331 21.0882 14.6331ZM16.9515 4.67836C14.2257 4.67836 12.0159 6.88048 12.0159 9.59694C12.0346 9.7027 12.0346 9.81089 12.0159 9.91665H21.9487C21.9093 9.81457 21.8884 9.70631 21.887 9.59694C21.887 6.88048 19.6773 4.67836 16.9515 4.67836Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <span
+              class="absolute -top-1 -right-1 bg-orange-500 text-xs w-4 h-4 rounded-full flex items-center justify-center"
+              >0</span
+            >
+          </div>
+        </div>
+
+        <div
+          class="absolute top-full left-0 w-full bg-black/90 text-white hidden peer-checked:flex md:hidden flex-col items-center gap-6 py-6"
+        >
+          <a href="#">Furniture</a>
+          <a href="#">Shop</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+
+      <div
+        class="relative z-10 min-h-[80vh] flex flex-col items-center justify-center text-center px-4 text-white"
+      >
+        <h2 class="text-[clamp(2rem,5vw,4rem)] font-extrabold leading-tight">
+          Make Your Interior More <br />
+          Minimalistic & Modern
+        </h2>
+
+        <p class="mt-4 max-w-md text-gray-300 text-sm sm:text-base">
+          Turn your room with panto into a lot more minimalist and modern with
+          ease and speed
+        </p>
+
+        <div
+          class="mt-8 flex items-center bg-white/20 backdrop-blur rounded-full px-4 py-2 w-full max-w-md"
+        >
+          <input
+            type="text"
+            placeholder="Search furniture"
+            class="flex-1 bg-transparent outline-none text-white placeholder-gray-300"
+          />
+          <button class="bg-orange-500 hover:bg-orange-600 p-2 rounded-full">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-t from-white to-transparent z-20"
+      ></div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 py-20">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <h2 class="text-3xl font-bold">
+          Why <br class="hidden lg:block" />
+          Choosing Us
+        </h2>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Luxury facilities</h3>
+          <p class="text-gray-500 text-sm mb-3">
+            Comfortable service and all-around facilities.
+          </p>
+          <a class="text-orange-400 text-sm">More Info →</a>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Affordable Price</h3>
+          <p class="text-gray-500 text-sm mb-3">
+            High quality with affordable price.
+          </p>
+          <a class="text-orange-400 text-sm">More Info →</a>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Many Choices</h3>
+          <p class="text-gray-500 text-sm mb-3">
+            Many unique workspace choices.
+          </p>
+          <a class="text-orange-400 text-sm">More Info →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-100 py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-center text-3xl font-bold mb-10">
+          Best Selling Product
+        </h2>
+
+        <div
+          class="flex gap-5 overflow-x-auto snap-x snap-mandatory sm:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+        >
+          <div
+            class="bg-white rounded-lg shadow-sm hover:shadow-md transition overflow-hidden min-w-[260px] snap-center flex-shrink-0 p-4"
+          >
+            <img
+              src="images/serik.png"
+              class="h-32 mx-auto mb-4 object-contain"
+            />
+            <p class="text-xs text-gray-400">Chair</p>
+            <h3 class="font-semibold">Sakarias Armchair</h3>
+            <div class="text-orange-400 text-xs mb-3">★★★★★</div>
+            <div class="flex justify-between items-center">
+              <span class="font-semibold">$392</span>
+              <button class="w-8 h-8 bg-black text-white rounded-full">
+                +
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg shadow-sm hover:shadow-md transition overflow-hidden min-w-[260px] snap-center flex-shrink-0 p-4"
+          >
+            <img
+              src="images/Group 3742.png"
+              class="h-32 mx-auto mb-4 object-contain"
+            />
+            <p class="text-xs text-gray-400">Chair</p>
+            <h3 class="font-semibold">Baltsar Chair</h3>
+            <div class="text-orange-400 text-xs mb-3">★★★★★</div>
+            <div class="flex justify-between items-center">
+              <span class="font-semibold">$392</span>
+              <button class="w-8 h-8 bg-black text-white rounded-full">
+                +
+              </button>
+            </div>
+          </div>
+          <div
+
+          
+            class="bg-white rounded-lg shadow-sm hover:shadow-md transition overflow-hidden min-w-[260px] snap-center flex-shrink-0 p-4"
+          >
+            <img
+              src="images/sakarias-armchair-black-sporda-dark-gray__0729767_pe737131_s5_adobespark (1).png"
+              class="h-32 mx-auto mb-4 object-contain"
+            />
+            <p class="text-xs text-gray-400">Chair</p>
+            <h3 class="font-semibold">Baltsar Chair</h3>
+            <div class="text-orange-400 text-xs mb-3">★★★★★</div>
+            <div class="flex justify-between items-center">
+              <span class="font-semibold">$392</span>
+              <button class="w-8 h-8 bg-black text-white rounded-full">
+                +
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-sm hover:shadow-md transition overflow-hidden min-w-[260px] snap-center flex-shrink-0 p-4"
+          >
+            <img
+              src="images/sakarias-armchair-black-sporda-dark-gray__0729767_pe737131_s5_adobespark (2).png"
+              class="h-32 mx-auto mb-4 object-contain"
+            />
+            <p class="text-xs text-gray-400">Chair</p>
+            <h3 class="font-semibold">Baltsar Chair</h3>
+            <div class="text-orange-400 text-xs mb-3">★★★★★</div>
+            <div class="flex justify-between items-center">
+              <span class="font-semibold">$392</span>
+              <button class="w-8 h-8 bg-black text-white rounded-full">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="container mx-auto grid grid-cols-1 md:grid-cols-2 py-20 items-center px-4 gap-10"
+    >
+      <img src="images/1446.png" class="w-[80%] h-auto mx-auto rounded-xl" />
+
+      <div>
+        <p class="text-orange-400 font-semibold mb-2">EXPERIENCES</p>
+        <h2 class="text-4xl font-bold mb-4">
+          We Provide You The Best Experience
+        </h2>
+        <p class="text-gray-500 mb-6">
+          All interiors are made by professionals with premium materials.
+        </p>
+        <a class="text-orange-400 font-medium">More Info →</a>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-2 py-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+        <div>
+          <p class="text-orange-400 text-sm font-medium mb-2">MATERIALS</p>
+          <h1 class="text-4xl font-bold leading-tight mb-4">
+            Very Serious <br />
+            Materials For Making Furniture
+          </h1>
+          <p class="text-gray-500 mb-6">
+            Because wood was very expensive and complicated to use we decided to
+            make furniture from metal.
+          </p>
+
+          <a
+            href="#"
+            class="text-orange-400 font-medium flex items-center gap-2"
+          >
+            More info →
+          </a>
+        </div>
+
+        <div class="grid grid-cols-3 grid-rows-4 p-4">
+          <img
+            src="images/Rectangle 1450.png"
+            class="col-span-1 row-span-2 w-[88%] mt-[40%] pl-4 object-cover rounded-xl"
+          />
+
+          <div class="col-span-2"></div>
+
+          <img
+            src="images/46.png"
+            class="col-span-2 row-span-3 w-full pl-5 h-[88%] object-cover rounded-xl"
+          />
+
+          <img
+            src="images/19.png"
+            class="col-span-1 row-span-2 w-full object-cover rounded-xl"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20">
+      <p class="text-center text-orange-400 text-sm tracking-widest mb-2">
+        TESTIMONIALS
+      </p>
+      <h2 class="text-center text-3xl font-bold mb-12">Our Client Reviews</h2>
+
+      <div class="flex gap-6 px-4 overflow-x-auto snap-x snap-mandatory md:grid md:grid-cols-3 lg:grid-cols-3 md:overflow-visible">
+
+        <div class="relative w-[280px] sm:w-[300px] md:col-span-1 md:w-full flex-shrink-0 snap-center">
+          <img
+            src="images/unsplash_JaXs8Tk5Iww.png"
+            class="w-full h-[360px] sm:h-[400px] md:h-[420px] object-cover rounded-xl"
+          />
+
+          <div
+            class="absolute top-[50%] md:top-[30%] md:space-y-4 left-1/2 -translate-x-1/2 w-[85%] bg-white rounded-2xl shadow-lg px-6 pt-12 pb-6 text-center"
+          >
+            <img
+              src="images/up.png"
+              class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full border-4 border-white"
+            />
+            <div>
+              <h4 class="font-semibold">Bang Upin</h4>
+              <p class="text-sm text-gray-400 mb-2">Pedagang Asongan</p>
+            </div>
+
+            <p class="text-sm text-gray-500 mb-2">
+              “Terimakasih banyak, ini ruanganku menjadi lebih mewah dan
+              terlihat mahal”
+            </p>
+
+            <div class="flex justify-center text-orange-400">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="relative w-[320px] md:col-span-1 md:w-full  flex-shrink-0 snap-center sm:w-[320px]">
+          <img
+            src="images/unsplash__HqHX3LBN18.png"
+            class="w-full h-[360px] sm:h-[400px] md:h-[420px] object-cover rounded-xl"
+          />
+
+          <div
+            class="absolute top-[50%] md:top-[30%] left-1/2 -translate-x-1/2 w-[85%] bg-white rounded-2xl shadow-lg px-6 pt-12 pb-6 text-center"
+          >
+            <img
+              src="images/suka.png"
+              class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full border-4 border-white"
+            />
+
+            <h4 class="font-semibold">Ibuk Sukijan</h4>
+            <p class="text-sm text-gray-400 mb-2">Ibu Rumah Tangga</p>
+
+            <p class="text-sm text-gray-500 mb-2">
+              “Makasih Panto, aku sekarang berasa tinggal di apartement karena
+              barang-barangnya terlihat mewah”
+            </p>
+
+            <div class="flex justify-center text-orange-400">
+              ★★★★★
+            </div>
+          </div>
+        </div>
+
+        <div class="relative w-[320px] md:col-span-1 md:w-full  flex-shrink-0 snap-center sm:w-[320px]">
+          <img
+            src="images/unsplash_h2_3dL9yLpU.png"
+            class="w-full h-[360px] sm:h-[400px] md:h-[420px] object-cover rounded-xl"
+          />
+
+          <div
+            class="absolute top-[50%] md:top-[30%] left-1/2 -translate-x-1/2   w-[85%] bg-white rounded-2xl shadow-lg px-6 pt-12 pb-6 text-center">
+            <img
+              src="images/Ellipse 1131.png"
+              class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full border-4 border-white"
+            />
+
+            <div>
+              <h4 class="font-semibold">Mpok Ina</h4>
+              <p class="text-sm text-gray-400 mb-3">Karyawan Swasta</p>
+            </div>
+
+            <p class="text-sm text-gray-500 mb-4">
+              “Sangat terjangkau untuk kantong saya yang tidak terlalu banyak”
+            </p>
+
+            <div class="flex justify-center text-orange-400">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-100 py-16">
+      <div
+        class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-10"
+      >
+        <div class="md:col-span-2">
+          <h3 class="text-xl font-bold mb-3">Panto</h3>
+          <p class="text-sm text-gray-500">
+            Comfortable service and all-around facilities.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-orange-400 mb-3">Services</h4>
+          <ul class="text-sm space-y-2">
+            <li>Email Marketing</li>
+            <li>Campaigns</li>
+            <li>Branding</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-orange-400 mb-3">Furniture</h4>
+          <ul class="text-sm space-y-2">
+            <li>Beds</li>
+            <li>Chair</li>
+            <li>All</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="text-center text-sm text-gray-400 mt-10">
+        © 2021 Panto. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
